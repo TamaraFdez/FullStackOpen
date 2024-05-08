@@ -1,6 +1,6 @@
-flowchart LR
+graph LR;
+    A[Usuario] --> B[Navegador];
+    B --> C[Servidor];
+    C --> B;
+    B --> A;
 
-A[Hard] -->|Text| B(Round)
-B --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
