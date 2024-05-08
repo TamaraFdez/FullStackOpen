@@ -1,4 +1,4 @@
-# Ejercicios del Bootcamp de Desarrollo Web
+# Ejercicios del Bootcamp FullStack
 
 Este repositorio contiene una serie de ejercicios realizados como parte del bootcamp de Desarrollo Web. Estos ejercicios están diseñados para ayudar a los estudiantes a practicar y reforzar los conceptos aprendidos en el bootcamp.
 
