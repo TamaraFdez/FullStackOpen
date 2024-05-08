@@ -1,11 +1,6 @@
-sequenceDiagram
-    participant User
-    participant Browser
-    participant Server
+flowchart LR
 
-    User -> Browser: Escribe algo en el campo de texto
-    User -> Browser: Clic en el botón "Save"
-    Browser -> Server: Petición HTTP POST con la nueva nota
-    Server --> Browser: Confirmación de recepción de la nota
-    Browser --> User: Notificación de que la nota ha sido guardada exitosamente
-
+A[Hard] -->|Text| B(Round)
+B --> C{Decision}
+C -->|One| D[Result 1]
+C -->|Two| E[Result 2]
