@@ -1,10 +1,11 @@
 sequenceDiagram
-    participant Usuario
-    participant Navegador
-    participant Servidor
+    participant User
+    participant Browser
+    participant Server
 
-    Usuario -> Navegador: Escribe algo en el campo de texto
-    Usuario -> Navegador: Clic en el botón "Guardar"
-    Navegador -> Servidor: Petición HTTP POST con la nueva nota
-    Servidor --> Navegador: Confirmación de recepción de la nota
-    Navegador --> Usuario: Notificación de que la nota ha sido guardada exitosamente
+    User -> Browser: Escribe algo en el campo de texto
+    User -> Browser: Clic en el botón "Save"
+    Browser -> Server: Petición HTTP POST con la nueva nota
+    Server --> Browser: Confirmación de recepción de la nota
+    Browser --> User: Notificación de que la nota ha sido guardada exitosamente
+
