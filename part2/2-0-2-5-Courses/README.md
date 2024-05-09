@@ -1,8 +1,29 @@
-# React + Vite
+# Curso de Desarrollo de Aplicaciones con React y Node.js
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación simple que muestra información sobre cursos de desarrollo de aplicaciones utilizando React y Node.js.
 
-Currently, two official plugins are available:
+## Cómo funciona
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+La aplicación muestra una lista de cursos, cada uno con su nombre y una lista de partes que incluyen el nombre y la cantidad de ejercicios. La información se renderiza utilizando componentes de React.
+
+## Componentes
+
+### `Course`
+
+Un componente que muestra un curso, incluyendo su nombre y las partes del curso.
+
+```jsx
+import { Course } from './components/Course.jsx';
+
+function App() {
+  // Define la lista de cursos
+  const courses = [
+    // Lista de cursos...
+  ];
+
+  // Renderiza el componente Course con la lista de cursos
+  return <Course courses={courses} />;
+}
+
+export default App;
+
