@@ -1,8 +1,8 @@
 import axios from 'axios'
-const baseUrl = 'https://fullstackopen-4lxg--4001--34455753.local-credentialless.webcontainer.io/persons'
+const baseUrl = 'http://localhost:3002/api/persons'
 
 const getAll = () => {
-  return axios.get(baseUrl)
+  return axios.get(`${baseUrl}`)
 }
 
 const create = newObject => {
