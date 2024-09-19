@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://listadecontactos.onrender.com/',
+        target: 'https://localhost:3002',
         changeOrigin: true,
       },
     }

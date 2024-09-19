@@ -28,14 +28,18 @@ export function Contactos({ persons, setPersons }) {
       {success && <p style={{ color: "green" }}>{success} </p>}
           {error && <p style={{ color: "red" }}>{error} </p>}
       <div>
-        {persons.map((person) => (
-          <div key={person.id}>
-            <p>
-             {person.name} Telf: {person.number}
-            </p>
-            <button onClick={() => deleteContact(person.id, person.name)}>Eliminar</button>
-          </div>
-        ))}
+      {Array.isArray(persons) && persons.map((person) => (
+  <div key={person.id}>
+    <p>{person.id}</p>
+    <p>
+      {person.name} </p>
+      <p>
+      Telf: {person.number}</p>
+   
+    <button onClick={() => deleteContact(person.id, person.name)}>Eliminar</button>
+  </div>
+))}
+
       </div>
     </section>
   );

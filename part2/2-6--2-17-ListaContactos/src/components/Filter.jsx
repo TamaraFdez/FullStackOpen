@@ -57,6 +57,7 @@ export function FilterContact({ persons,setPersons }) {
               <p>
                {person.name} Telf: {person.number}
               </p>
+              <p>id:{person.id}</p>
               <button onClick={() => deleteContact(person.id, person.name, setError, setSuccess)}>Eliminar</button>
             </div>
             ))

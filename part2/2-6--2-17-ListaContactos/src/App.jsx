@@ -14,7 +14,7 @@ function App() {
     contactsService
       .getAll()
       .then(response => {
-        console.log('promise fulfilled')
+        
         setPersons(response.data)
       })
   }, [])

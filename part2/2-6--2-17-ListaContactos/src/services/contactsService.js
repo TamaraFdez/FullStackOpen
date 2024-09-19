@@ -1,20 +1,20 @@
 import axios from 'axios'
-const baseUrl = 'https://listadecontactos.onrender.com'
+const baseUrl = '/api/persons'
 
 const getAll = () => {
-  return axios.get(`${baseUrl}/api/persons`)
+  return axios.get(`${baseUrl}`)
 }
 
 const create = newObject => {
-  return axios.post(`${baseUrl}/api/persons`, newObject)
+  return axios.post(`${baseUrl}`, newObject)
 }
 
 const update = (id, newObject) => {
-  return axios.put(`${baseUrl}/api/persons/${id}`, newObject)
+  return axios.put(`${baseUrl}/${id}`, newObject)
 }
 
 const remove = (id) => {
-  return axios.delete(`${baseUrl}/api/persons/${id}`);
+  return axios.delete(`${baseUrl}/${id}`);
 }
 
 export default { 
